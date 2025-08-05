@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Amar Padage - Indian Culinary Excellence</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Chef Amar Padage</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#dishes"> Dishes</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li>
+                    <a href="#" class="cta-download" id="downloadResume">
+                        <i class="fas fa-download"></i>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars" id="menuIcon"></i>
+            </button>
+            
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+         <button class="mobile-close-btn" id="mobileCloseBtn">
+            <i class="fas fa-times"></i>
+        </button>
+       
+        <ul>
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#dishes" class="mobile-nav-link"> Dishes</a></li>
+            <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+            <li>
+                <a href="#" class="cta-download mobile-nav-link" id="mobileDownloadResume">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </li>
+        </ul>
+        
+        
+        
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-text"> Amar Padage</h1>
+            <p class="hero-text">Authentic Indian Flavors with Modern Innovation</p>
+            <div class="hero-buttons hero-text">
+                <a href="#dishes" class="btn btn-primary">View My Work</a>
+                
+            </div>
+        </div>
+        <div class="floating-icon animate-float">
+            <i class="fas fa-utensils"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image animate-fade-up">
+                    <img src="images/WhatsApp Image 2025-07-23 at 08.51.56_41486374.jpg" alt="Chef Amar Padge">
+                    <div class="experience-badge animate-scale-in animate-delay-400">
+                        <div class="number">Educational</div>
+                        <div class="text">3+Years Experience</div>
+                    </div>
+                </div>
+                <div class="about-content animate-fade-up animate-delay-200">
+                    <h2>About Chef Amar Padge</h2>
+                    <p>
+                    I’m Chef Amar Padage, a passionate culinary professional from Maharashtra with a degree from Chef's Kitchen Institute of Culinary Arts and Hotel Management, Kolhapur. During my academic journey, I actively participated in campus events and advanced kitchen practicals that strengthened my culinary foundation.
+
+                    </p>
+                    <p>
+                    I’ve worked in 150+ banquets, completed an international internship in Mauritius, where I trained in breakfast, pastry, hot kitchen, and cold kitchen sections, gaining hands-on experience across multiple departments. I also took part in competitions like Art on Plate and the Nestlé Food Event, and attended a live cooking demo by Chef Dev Kasalkar, Rational India’s combi oven specialist. <br>
+                    <p>Beyond the kitchen, I supported my college’s 2025–2026 academic year opening event, assisting with guest management, documentation, and orientation. With a solid understanding of HACCP food safety standards, I bring hygiene, discipline, and creativity to every dish I prepare.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item animate-scale-in animate-delay-600">
+                            <i class="fas fa-award"></i>
+                            <div class="value">2 Awards</div>
+                        </div>
+                        <div class="stat-item animate-scale-in animate-delay-600">
+                            <i class="fas fa-users"></i>
+                            <div class="value">150+ Events</div>
+                        </div>
+                        <div class="stat-item animate-scale-in animate-delay-600">
+                            <i class="fas fa-clock"></i>
+                            <div class="value"> Educational 3+ Years</div>
+                        </div>
+                    </div>
+
+                    <div class="specializations">
+                        <h3>Specializations</h3>
+                        <div class="badges">
+                            <span class="badge">Continental Break-Fast</span>
+                            <span class="badge">South Indian Delicacies</span>
+                            <span class="badge">Tandoor Specialties</span>
+                            <span class="badge">Regional Curries</span>
+                            <span class="badge">Vegetarian Cuisine</span>
+                            <span class="badge">Pastry And Bakery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Signature Dishes Section -->
+<section id="dishes" class="dishes-section">
+    <div class="container">
+        <div class="section-title animate-fade-up">
+            <h2> Dishes</h2>
+            <p>Each dish is crafted with authentic spices and traditional techniques, bringing the true taste of India to your table</p>
+        </div>
+
+        <div class="filter-tabs animate-fade-up animate-delay-200">
+            <div class="filter-container">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="main">Main Course</button>
+                <button class="filter-tab" data-filter="appetizer">Salad</button>
+                <button class="filter-tab" data-filter="dessert">Dessert</button>
+            </div>
+        </div>
+
+        <div class="dishes-grid" id="dishes-grid">
+
+            <div class="dish-card animate-scale-in" data-category="main">
+                <div class="dish-image">
+                    <img src="images/WhatsApp Image 2025-08-01 at 08.26.48_8d3f3d3e.jpg" alt="Butter Chicken">
+                    <div class="dish-category">Main Course</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="main">
+                <div class="dish-image">
+                    <img src="images/WhatsApp Image 2025-08-01 at 08.26.48_77136a62.jpg" alt="Biryani">
+                    <div class="dish-category">Main Course</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="dessert">
+                <div class="dish-image">
+                    <img src="images/tasty__food09-20250728-0008.jpg" alt="Gulab Jamun">
+                    <div class="dish-category">Dessert</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="appetizer">
+                <div class="dish-image">
+                    <img src="images/tasty__food09-20250728-0002.jpg" alt="Samosa">
+                    <div class="dish-category">Salad</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="main">
+                <div class="dish-image">
+                    <img src="images/WhatsApp Image 2025-08-01 at 08.15.36_93893ef6.jpg" alt="Dal Makhani">
+                    <div class="dish-category">Main Course</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="dessert">
+                <div class="dish-image">
+                    <img src="images/tasty__food09-20250728-0009.jpg" alt="Kulfi">
+                    <div class="dish-category">Dessert</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="appetizer">
+                <div class="dish-image">
+                    <img src="images/tasty__food09-20250728-0005.jpg" alt="Tandoori Chicken">
+                    <div class="dish-category">Salad</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="dessert">
+                <div class="dish-image">
+                    <img src="images/tasty__food09-20250728-0010.jpg" alt="Ras Malai">
+                    <div class="dish-category">Dessert</div>
+                </div>
+            </div>
+
+            <div class="dish-card animate-scale-in" data-category="appetizer">
+                <div class="dish-image">
+                    <img src="images/tasty__food09-20250728-0004.jpg" alt="Tandoori Chicken">
+                    <div class="dish-category">Salad</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title animate-fade-up">
+                <h2>What People Say</h2>
+                <p>Testimonials from satisfied clients and food enthusiasts</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="testimonial-text">"Chef Amar's authentic Indian cuisine is absolutely incredible. Every dish bursts with traditional flavors and perfect spice balance."</p>
+                    <div class="testimonial-author">Shivraj Yadav</div>
+                    
+                </div>
+
+                <div class="testimonial-card animate-fade-up animate-delay-200">
+                    <div class="stars">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Chef Amar for our wedding was the best decision. The food was exceptional and our guests couldn't stop praising it."</p>
+                    <div class="testimonial-author">Pankaj Shinde</div>
+                    
+                </div>
+
+                <div class="testimonial-card animate-fade-up animate-delay-400">
+                    <div class="stars">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="testimonial-text">"Amar's cooking classes taught me the secrets of authentic Indian spices. His passion for food is truly inspiring."</p>
+                    <div class="testimonial-author">Suyog Maindarkar </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title animate-fade-up">
+                <h2>Gallery</h2>
+                <p>A visual journey through my culinary creations and kitchen moments</p>
+            </div>
+
+            <div class="bento-grid">
+                <div class="gallery-item large animate-scale-in">
+                    <img src="images/group photo.jpg" alt="Kitchen Mastery">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item small animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-08-01 at 17.11.35_269b43f6.jpg" alt="Fresh Spices">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item small animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-08-01 at 08.26.48_ea274f0c.jpg" alt="Plating Art">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item medium animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-08-01 at 08.26.49_dc493ce0.jpg" alt="Signature Curry">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item tall animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-08-01 at 17.09.51_c631e13e.jpg" alt="Chef at Work">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item medium animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-07-23 at 08.43.12_53063fdc.jpg" alt="Sweet Creations">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item small animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-07-23 at 08.43.13_c97531cf.jpg" alt="Biryani Special">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item small animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-07-23 at 08.43.19_1b3a5c92.jpg" alt="Traditional Snacks">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item large animate-scale-in">
+                    <img src="images/WhatsApp Image 2025-07-23 at 08.43.14_bd343072.jpg" alt="Tandoor Excellence">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <!-- Top Section: Contact + Nav -->
+    <div class="footer-top">
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Spice Street, Mumbai, MH</li>
+          <li><i class="fas fa-phone"></i> +91 82758 56434</li>
+          <li><i class="fas fa-envelope"></i> amarpadage@gmail.com </li>
+        </ul>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#dishes">Dishes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Social Icons -->
+    <div class="footer-bottom">
+      <div class="social-links">
+        <a href="https://www.instagram.com/amarpadage70?igsh=MTYxZHE5aWxyOWd6bA==" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/shorts/g1EgWZkDj3k?feature=shared" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/amar-padage-451a05345/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="copyright">© 2025 Chef Amar Padge. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+        
+
+</body>
+</html>
